@@ -28,4 +28,4 @@ Copy `_template/project/` to a new folder at the repo root, then add a row for t
 
 | Project | What it is |
 | --- | --- |
-| None yet | The first project is added in a later change. |
+| [systems](systems/) | A collection of independent assistant-system case studies. |
