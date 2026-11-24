@@ -1,0 +1,21 @@
+---
+type: readme
+status: current
+---
+
+# Templates
+
+[STANDARD.md](../STANDARD.md) as files. Every file says what belongs in it; replace
+each line in italics or `<angle brackets>`. Where these templates and the standard
+differ, the standard wins and the template is fixed in the same pull request.
+Files are written in this repo by pull request. Sandra drafts; Justin reviews and merges.
+
+| Folder | Copy it to | What it is |
+| --- | --- | --- |
+| [project/](project/) | `<project-name>/` at the repo root | Product-level docs: README, brief, principles, product spec, architecture. README and brief are required; the rest are optional by type. |
+| [component/](component/) | `<project-name>/<component-name>/` | The required component set: README, brief, spec, design, plan, build log, and `images/`. Every component has all of them. Its README also lists the optional types (`<slice>-design.md`, `<name>-prompt.md`), added only when a component needs one. |
+| [repo/](repo/) | the root of a new code repository | `AGENTS.md` (sections 1–6 standard, section 7 the repo's own), `.github/pull_request_template.md`, `README.md`, `.gitignore`, `.env.example`. The README points at this design repo. |
+
+Links inside the templates are written for where the files end up once copied, so a
+component's `../` reaches its project folder, and a project's `component/` links
+point at its component folders. Instructional placeholders belong only in `_template/`.
