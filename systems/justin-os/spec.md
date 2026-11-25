@@ -36,6 +36,7 @@ A routine may read GitHub, Gmail, Google Calendar, and Google Drive. It does not
 
 - Given a connector error or a missing permission, when the run continues, then the brief says so in one line and does not invent the missing events or mail.
 - Given both calendars, when one connection lacks a permission, then that connection's gap is the one line, and the other connection is still read.
+- Given a calendar connection, when it is checked, then the check includes listing that account's calendars. An event read that succeeds does not show that the list permission is present.
 
 **Failure case:** a connector is down. The run reports the failure. It does not present an empty day as if the calendar had been read.
 
@@ -79,6 +80,5 @@ Tasks and the conversation log are updated from what the sources show. Serves co
 
 ## Known gaps
 
-- One calendar connection still needs one more permission. The permission's name is not recorded. Justin decides and grants it. Until then JOS-CONN-1's one-line failure report is the required behavior.
 - Version 1 of the morning-brief prompt still describes the website pilot as current work. The pilot was paused. Whether version 2 changes that sentence is open. Justin decides.
 - The success measures in [plan.md](plan.md) are not confirmed. Justin decides them. This spec does not treat them as acceptance tests yet.
