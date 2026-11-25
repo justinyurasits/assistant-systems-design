@@ -35,6 +35,6 @@ AGENTS.md points back to this folder. Omit this line until a code repository exi
 
 ## How these docs work
 
-Files are written in this repo by pull request. Sandra drafts; Justin reviews and
+Files are written in this repo by pull request. The assistant drafts. The owner reviews and
 merges. The merged file on `main` is the source. `type` and `status` live in each
 file's front matter.

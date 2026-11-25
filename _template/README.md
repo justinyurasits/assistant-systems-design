@@ -8,7 +8,7 @@ status: current
 [STANDARD.md](../STANDARD.md) as files. Every file says what belongs in it; replace
 each line in italics or `<angle brackets>`. Where these templates and the standard
 differ, the standard wins and the template is fixed in the same pull request.
-Files are written in this repo by pull request. Sandra drafts; Justin reviews and merges.
+Files are written in this repo by pull request. The assistant drafts. The owner reviews and merges.
 
 | Folder | Copy it to | What it is |
 | --- | --- | --- |

@@ -2,7 +2,17 @@
 
 Operating rules for this repository. It is public. Documents hold methods and decisions, not email addresses, secrets, or personal or client data.
 
-Sandra drafts. Justin reviews and merges. The document model is in [STANDARD.md](STANDARD.md). These rules are the guardrails. That file is the model. Where they differ, the standard is right.
+Justin is the owner of this repository. The document model is in [STANDARD.md](STANDARD.md). These rules are the guardrails. That file is the model. Where they differ, the standard is right.
+
+## Who the rules apply to
+
+Every rule in this file binds both the assistant and the coding agent.
+
+- **The assistant** is the chief-of-staff assistant. The assistant scopes work, drafts issues and specs, briefs the coding agent, and runs the roll-up conversation with the owner.
+- **The coding agent** is a Cursor cloud agent, one job at a time, not a standing bot. The coding agent makes the commits, the branch, and the pull request for an approved issue.
+- **The owner** approves issues, reviews and merges, and is the only one who approves records.
+
+Draft-only sends bind the assistant. Branch and pull-request rules bind the coding agent.
 
 ## 1. What this is
 
@@ -20,10 +30,10 @@ Read `STANDARD.md` before creating or restructuring a document.
 ## 3. How work happens
 
 - **The issue is the plan.** Work only from an approved GitHub issue, and read it first (`gh issue view <N>`). GitHub is read-only except on an approved issue and its branch. With no approved issue, do not change the repository.
-- One issue, one branch, one pull request. Branch name: `issue-<N>-<short-description>`.
-- Never commit or push to `main`. Never merge: Justin reviews and merges.
+- One issue, one branch, one pull request. Branch name: `issue-<N>-<short-description>`. This binds the coding agent.
+- Never commit or push to `main`. Never merge: the owner reviews and merges.
 - Anything outside the issue gets a new issue. Don't widen the scope.
-- **Draft-only sends.** Draft the message and stop. Nothing is sent, posted, or delivered without Justin's approval.
+- **Draft-only sends.** This binds the assistant. Draft the message and stop. Nothing is sent, posted, or delivered without the owner's approval.
 
 ## 4. Checks
 
@@ -42,11 +52,11 @@ Fill in `.github/pull_request_template.md`:
 
 ## 6. Roll-up, ask before, never
 
-**Roll-up.** Ask "Roll up to design?" when a pull request you opened is merged, when an issue or milestone is done, and about every ten turns of work since you last asked.
+**Roll-up.** Ask "Roll up to design?" when a pull request you opened is merged, when an issue or milestone is done, and at the end of a working session with the owner if unrecorded decisions exist.
 
 - On yes: open a pull request in this repository that proposes decisions for the component's `design.md` log, findings for `build-log.md`, and lessons that generalize for the project's `principles.md`. End that proposal with the line `Roll-up: assistant-systems-design #<first>–#<last>`.
-- On no: don't ask again for another ten turns.
-- Nothing enters the record until Justin approves it.
+- On no: don't ask again until the next trigger.
+- Nothing enters the record until the owner approves it.
 
 **Ask before:**
 
@@ -59,3 +69,9 @@ Fill in `.github/pull_request_template.md`:
 - commit secrets, email addresses, personal data, or client names
 - rewrite git history
 - send, post, or deliver anything that was only drafted
+
+## 7. Overrides
+
+Repo-specific exceptions go here, with the reason. None currently.
+
+A future build repository started from `_template/repo/` records its own exceptions in that copy's section 7.

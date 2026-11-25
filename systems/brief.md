@@ -11,7 +11,7 @@ Assistant Systems is a collection of independent assistant-system case studies i
 
 ## 1. Customer
 
-The collection is for Justin's practice of designing assistant systems. Sandra drafts the documents. Justin reviews and merges them. It is not for product work, and it is not a place for personal or client data.
+The collection is for the owner's practice of designing assistant systems. The assistant drafts the documents. The owner reviews and merges them. It is not for product work, and it is not a place for personal or client data.
 
 ## 2. The painful moment
 
