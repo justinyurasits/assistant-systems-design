@@ -9,7 +9,7 @@ Design documents for assistant and agentic systems. This repository is public. I
 
 ## How these docs are written
 
-Sandra drafts a change in a pull request. Justin reviews and merges. The merged file on `main` is the source. Documents are written here, not synced from Claude Docs. Where this README and [STANDARD.md](STANDARD.md) differ, the standard is right.
+The assistant drafts a change in a pull request. The owner reviews and merges. The merged file on `main` is the source. Documents are written here, not synced from Claude Docs. Where this README and [STANDARD.md](STANDARD.md) differ, the standard is right.
 
 ## Files
 

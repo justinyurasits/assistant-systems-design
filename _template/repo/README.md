@@ -28,7 +28,7 @@
 
 ## How work happens
 
-Every change starts as a GitHub issue and lands through a pull request. Justin reviews
+Every change starts as a GitHub issue and lands through a pull request. The owner reviews
 and merges. Design changes happen in the
 [assistant-systems-design](https://github.com/justinyurasits/assistant-systems-design)
 repository first, by pull request. See [AGENTS.md](AGENTS.md).

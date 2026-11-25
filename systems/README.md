@@ -38,4 +38,4 @@ This folder groups independent builds, so it has no product-spec.md and no archi
 
 ## How these docs work
 
-Files are written in this repo by pull request. Sandra drafts. Justin reviews and merges. The merged file on main is the source. type and status live in each file's front matter.
+Files are written in this repo by pull request. The assistant drafts. The owner reviews and merges. The merged file on main is the source. type and status live in each file's front matter.
