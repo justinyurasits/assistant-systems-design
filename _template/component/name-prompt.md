@@ -6,9 +6,11 @@ status: draft
 # Project name — Component name <Name> Prompt
 
 *Optional. One file per prompt the component sends to a model; name it
-`<name>-prompt.md`. This is the reviewed design of the prompt. The code repository holds
-the copy that runs, and a test there checks the two match. Change the spec first, then
-this prompt, then the code.*
+`<name>-prompt.md`. This is the reviewed design of the prompt. When a code repository
+exists, it holds the copy that runs, and a test there checks the two match. Until then,
+say where the running copy lives, for example a scheduled routine. A change to that
+copy is a new row in the version log, in the same working session. The assistant
+proposes it by pull request.*
 
 ## What it's for
 
@@ -17,7 +19,7 @@ this prompt, then the code.*
 ## The prompt
 
 ```text
-<the full prompt, exactly as the code sends it>
+<the full prompt, exactly as the running copy sends it>
 ```
 
 ## Version log
