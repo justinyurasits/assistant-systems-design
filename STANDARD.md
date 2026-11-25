@@ -30,7 +30,7 @@ Every component has the same files from the day it is created. A file with nothi
 | File | Its one job |
 | --- | --- |
 | `<slice>-design.md` | Technical design for one vertical slice |
-| `<name>-prompt.md` | A prompt the component sends to a model, with its version log. The code repository holds the copy that runs, and a test there checks the two match |
+| `<name>-prompt.md` | A prompt the component sends to a model, with its version log. When a code repository exists, it holds the running copy and a test checks they match. Until then, the file states where the running copy lives, and a change to that copy is a new version in the log, proposed by the assistant in the same working session |
 
 A new optional type is added to this table when a real document needs one, so every document has a name and a stated job. A file that fits no row is a reason to add a row, not to keep an unnamed file.
 
@@ -41,7 +41,7 @@ A new optional type is added to this table when a real document needs one, so ev
 - **Front matter: `type` and `status`** (`draft | current | superseded`) on every design document in this repository, written in the file. `type` and `status` do not live anywhere else. A README's `type` is `readme`. This file's `type` is `standard`.
 - Filenames are lowercase-kebab `.md`. No version numbers in filenames.
 - **Repo-authored.** Every document is written in this repository by pull request. The assistant drafts; the owner reviews and merges. The merged file on `main` is the source. A placeholder stays a placeholder until a pull request fills it.
-- **Titles** follow `<Project> — <Component> <doc type>`, with the doc type taken from the file name: "Construction OS — Corpus Design", "Construction OS — Intake Router Classifier Prompt". Project-level docs drop the component ("Construction OS — Brief"). Docs for this repository itself use "Assistant Systems Design" as the project ("Assistant Systems Design — Document Standard"). The doc's top heading matches that title. A README is the exception: its top heading is the project name, the component name, or the repository name.
+- **Titles** follow `<Project> — <Component> <doc type>`, with the doc type taken from the file name: "Assistant Systems — Justin-os Design", "Assistant Systems — Justin-os Morning Brief Prompt". Project-level docs drop the component ("Assistant Systems — Brief"). Docs for this repository itself use "Assistant Systems Design" as the project ("Assistant Systems Design — Document Standard"). The doc's top heading matches that title. A README is the exception: its top heading is the project name, the component name, or the repository name.
 - Restructuring happens in a pull request in this repository. The merged file on `main` is what the next change starts from.
 - A new component is this file set, not a decision about which files to make.
 - **This repository is public.** Documents hold methods and decisions. They do not hold email addresses, secrets, or client names.
@@ -109,5 +109,6 @@ Every project works the same way.
 
 | Date | Change |
 | --- | --- |
+| 2026-11-25 | A prompt file names where the running copy lives when there is no code repository yet. A change to that copy is a new version in the log, proposed by the assistant in the same working session. When a code repository exists, it holds the running copy and a test checks they match. Title examples are the headings already used here: "Assistant Systems — Justin-os Design", "Assistant Systems — Justin-os Morning Brief Prompt", and "Assistant Systems — Brief". |
 | 2026-11-25 | Role names in the generic rules: the assistant drafts, the coding agent opens pull requests, and the owner approves and merges. Roll-up triggers match `AGENTS.md`: a merged pull request, a finished issue or milestone, and the end of a working session with the owner if decisions are still unrecorded. The ten-turn trigger is dropped. On no, do not ask again until the next trigger. |
 | 2026-11-24 | Forked from `justinyurasits/design` STANDARD.md revision 61 and adapted for this repository. Dropped the external-doc sync layer: `sync-manifest.yaml`, `DOCS.md`, `tools/build_docs.py`, and the sync header. Renamed the design checkout path from `../design` to `../assistant-systems-design`, and the code-repo operating-rules file from `CLAUDE.md` to `AGENTS.md`. `type` and `status` live in each file's front matter. Documents are written here by pull request; the assistant drafts and the owner merges. Roll-up is a pull request in this repository. A build-log entry uses the pull request's Did / Broke / Learned labels. Upstream changes are adopted only on purpose. The reasons for the rules kept from revision 61 are in that revision's change history. |
