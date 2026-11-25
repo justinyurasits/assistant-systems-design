@@ -11,7 +11,7 @@ A collection of independent assistant-system case studies. It is not one product
 
 | | Designed | Built | Validated |
 | --- | --- | --- | --- |
-| Assistant-system case studies | The collection brief and principles are written. No component is in the tree. | No code repository. | Not validated. |
+| Assistant-system case studies | The collection brief and principles are written. Justin-os, case study 1, is documented and not validated. | No code repository. The assistants were set up on 2026-11-24. That setup is not a passed evaluation. | Not validated. |
 
 Nothing here is claimed as working. No evaluation has been run.
 
@@ -28,13 +28,13 @@ This folder groups independent builds, so it has no product-spec.md and no archi
 
 | Component | Folder | What it is |
 | --- | --- | --- |
-| None yet | | The first component is not added yet. |
+| Justin-os | [justin-os/](justin-os/) | Justin's personal assistant system. Case study 1. Documented on 2026-11-24. Not validated. |
 
 ## Repositories
 
 | Repository | What it holds |
 | --- | --- |
-| None yet | No code repository is linked. A build repository comes later and is out of scope for this change. |
+| None yet | No code repository is linked. A build repository comes later. |
 
 ## How these docs work
 
