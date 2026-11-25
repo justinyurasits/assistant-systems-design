@@ -19,8 +19,8 @@ Before a build is scoped, look at the work already on the relevant branch and in
 
 Connecting an account is part of the build, with its own checklist, not a step that happens off to the side.
 
-- **Learned from:** On 2026-11-24 the browser blocked connector pop-ups, a second sign-in was started before the first was finished, and one calendar connection was left short one permission. Recorded in [justin-os/build-log.md](justin-os/build-log.md).
-- **Rules that follow:** Allow the browser to show the pop-up. Finish one account sign-in before starting another. Check permissions per account. Do not name the account in this public repository.
+- **Learned from:** On 2026-11-24 the browser blocked connector pop-ups, a second sign-in was started before the first was finished, and one calendar connection was left short the permission to list calendars. On 2026-11-25 that box was ticked. Event reads had already succeeded while listing calendars still failed. Recorded in [justin-os/build-log.md](justin-os/build-log.md).
+- **Rules that follow:** Allow the browser to show the pop-up. Finish one account sign-in before starting another. Tick every box on the consent screen. Verify with a call that needs each permission, not only the call that happened to work. Do not name the account in this public repository.
 - **Enforced in:** A connector-setup checklist that is part of the build. The checklist file is not in this repository yet. Justin decides when it is added and where it lives. The checks already named are pop-ups, one sign-in at a time, and permissions per account. [tools/validate.py](../tools/validate.py) does not check them.
 
 ## 3. Say which helpers are standing assistants and which are one-job cloud agents

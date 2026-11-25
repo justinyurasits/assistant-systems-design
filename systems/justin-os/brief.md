@@ -29,6 +29,5 @@ The account addresses are not written here.
 
 ## Open
 
-- One Google Calendar connection still needs one more permission. The permission's name is not recorded. Justin grants it.
 - A named tool this system replaces, beyond the unbundled morning across those accounts, is not in the record. Justin decides whether to name one.
 - The success measures in [plan.md](plan.md) are proposed. Justin confirms them.

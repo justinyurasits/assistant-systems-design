@@ -15,17 +15,8 @@ The brief runs five weekdays in a row with no misses. Proposed. The named first 
 
 - **Exit criterion:** five weekday briefs delivered, and Justin agrees none of them missed. What counts as a miss is open. Justin decides.
 - **Covers:** JOS-ROUTINE-1 and JOS-CONN-1 in [spec.md](spec.md).
-- **Depends on:** the routine in [morning-brief-prompt.md](morning-brief-prompt.md). The second calendar permission may still be open. A missing permission is reported in one line. It is not papered over.
+- **Depends on:** the routine in [morning-brief-prompt.md](morning-brief-prompt.md). A missing permission is reported in one line. It is not papered over. The calendar list permission that was open at setup was granted on 2026-11-25. See [build-log.md](build-log.md).
 - **GitHub:** no code milestone. This is not a code repository.
-
-### The remaining calendar permission
-
-One of the two Google Calendar connections still needs one more permission. Proposed. The permission's name is not recorded.
-
-- **Exit criterion:** that connection returns today's and tomorrow's events, or the brief still reports the gap in one line and Justin accepts that as the open state.
-- **Covers:** JOS-CONN-1.
-- **Depends on:** Justin granting the permission. This pull request cannot grant it.
-- **GitHub:** none.
 
 ### Milestone 1, this repository
 

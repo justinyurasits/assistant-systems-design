@@ -12,7 +12,7 @@ How the parts work, and the decisions Justin approved on 2026-11-24. The system 
 | In scope now | Deferred |
 | --- | --- |
 | Sandra as the standing chief-of-staff assistant | The five-weekday brief streak |
-| Product Lead as the second standing assistant | The remaining calendar permission |
+| Product Lead as the second standing assistant | |
 | Architect, designer, and coder as one-job cloud agents | Role prompts for the build crew |
 | The shared workspace and the Command Center page | The build repository |
 | The read-only weekday morning brief | A second assistant system, not chosen |
@@ -28,7 +28,7 @@ The build crew is architect, designer, and coder. Each is a Cursor cloud agent s
 
 The shared workspace is on Sandra's computer, at justin-os/. It holds README, tasks, conversations/log, notes/, products/, and clients/. The morning brief refreshes a Command Center page in place.
 
-Connectors, read by default: GitHub through the Cursor GitHub app, two Gmail accounts, two Google Calendar accounts, and Google Drive. One calendar connection still needs one more permission. Addresses are not recorded here.
+Connectors, read by default: GitHub through the Cursor GitHub app, two Gmail accounts, two Google Calendar accounts, and Google Drive. On 2026-11-25 the missing permission, seeing an account's list of calendars, was granted. Listing calendars now returns, and the primary calendar is at owner access. Addresses are not recorded here.
 
 The brief's steps are specified in [morning-brief-prompt.md](morning-brief-prompt.md). It reads the workspace, both calendars, and both inboxes, separates business mail from a short personal section, counts noise, reads GitHub, updates tasks only from the source, and sends the brief in chat.
 
